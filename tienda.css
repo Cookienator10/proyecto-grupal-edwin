@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #eaa22f;
+}
+  header {
+    background-color: #eaa22f; 
+    padding: 10px 20px; 
+}
+
+.cantainer-a {
+    margin-top: 10px;
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.cantainer-a a, .cantainer-a input[type="search"] {
+    color: #b2b2b2; 
+    text-decoration: none;
+    padding: 0 10px; 
+}
+
+.cantainer-a input[type="search"] {
+    background-color: #aca7a7; 
+    border: none; 
+    padding: 5px 10px; 
+    color: rgb(53, 51, 51);
+    border-radius: 14px;
+    margin-left: 14px;
+}
+
+/*titulo*/
+h2 {
+    text-align: center; 
+    margin-top: 26px; 
+    color: #1e8ad9; 
+    font-size: 4rem;
+    font-family: 'Arial Black', sans-serif;
+}
+/*titulo*/
+
+.container-b {
+    display: flex; 
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+    gap: 10px; 
+    padding: 20px; 
+}
+
+.container-b button {
+    background-color: #007bff ;  
+    border: none; 
+    padding: 10px 20px; 
+    font-size: 12px; 
+    cursor: pointer; 
+    border-radius: 45px; 
+}
+
+.container-b button:hover {
+    background-color: rgb(255, 255, 255); 
+    color: #F16D1C;
+    transform: scale(1.05);
+}
+
+/*cards*/
+.services {
+    background-color:#eaa22f;
+    position: relative;
+    width: 100%;
+    height: 25rem;
+    object-fit: cover; 
+}
+
+.card {
+    width: calc(30% - 2rem);
+    height: 7rem;
+    margin: 1rem;
+    margin-top: 5%;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    color: #eaa22f;
+    border-color: #1e8ad9;
+    border-width: 5px; 
+    border-style: solid; 
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.card > img {
+    height: 60%;
+    object-fit: cover;
+    margin-bottom: 20px; 
+}
+
+.cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.icono {
+    position: relative;
+    top: 1.10rem;
+    right: 4px;
+    filter: invert(100%) saturate(0%) hue-rotate(30deg) brightness(100%) contrast(94%);
+}
+
+.cards h3 {
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+}
+.cards h3 { font-family: sans-serif; }
+.cards h3.g900 { font-weight: 900; }
+/*cards*/
+
+.Container-c {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    margin-top: 20px;
+}
+
+.Container-c a {
+    margin: 0 20px; 
+    font-size: 40px; 
+}
+
+
+
+@media screen and (max-width:932px) {
+
+
+    footer {
+        
+        display: flex; 
+        justify-content: space-around; 
+        margin-top: 15em;
+
+    }
+    a {
+        font-family: 44px;
+        font-size: 25px;
+         padding-left: 4px;
+    
+    }
+
+}
