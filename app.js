@@ -14,24 +14,24 @@ function api() {
 }
 
 function createProduct(product) {
-    // Crea el contenedor de la tarjeta
+    // Crea r la card
     const containerCard = document.createElement('div');
     containerCard.classList.add('card');
 
-    // Crea y configura la imagen
+    // Crear imagen
     const imgCard = document.createElement('img');
     imgCard.src = product.image;
     imgCard.alt = product.title;
 
-    // Crea y configura el título
+    // Crear titulo
     const titleCard = document.createElement('h3');
     titleCard.textContent = product.title;
 
-    // Añade la imagen y el título al contenedor de la tarjeta
+    // Añadir imagen
     containerCard.appendChild(imgCard);
     containerCard.appendChild(titleCard);
 
-    // Añade la tarjeta al contenedor padre '.container-products'
+    // Añadir al padre
     document.querySelector('.container-products').appendChild(containerCard);
 }
 
