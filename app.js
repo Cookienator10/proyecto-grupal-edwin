@@ -6,7 +6,7 @@ function api() {
     fetch('https://fakestoreapi.com/products')
         .then((res) => res.json())
         .then(data => {
-            data.slice(0, 5).forEach(product => {
+            data.slice(6, 12).forEach(product => {
                 createProduct(product);
             });
         })
