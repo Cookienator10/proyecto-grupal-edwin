@@ -29,7 +29,7 @@ function createProduct(product) {
 }
 
 function showModal(product) {
-    // Crear los elementos de la modal
+    //creacion elementios modal
     const modal = document.createElement('div');
     modal.setAttribute('id', 'productModal');
     modal.classList.add('modal');
@@ -52,32 +52,32 @@ function showModal(product) {
     descriptionModal.textContent = product.description;
 
     const priceModal = document.createElement('p');
-    priceModal.textContent = `Price: $${product.price}`; // Mostrar el precio del producto
+    priceModal.textContent = `Price: $${product.price}`; 
 
-    // Ensamblar la modal
+    // Construccion modal
     modalContent.appendChild(closeSpan);
     modalContent.appendChild(imgModal);
     modalContent.appendChild(titleModal);
     modalContent.appendChild(descriptionModal);
-    modalContent.appendChild(priceModal); // Agregar el elemento de precio a la modal
+    modalContent.appendChild(priceModal); 
     modal.appendChild(modalContent);
 
-    // Añadir la modal al body
+    // añade la modal al body
     document.body.appendChild(modal);
 
-    // Mostrar la modal
+    //se muestra modal
     modal.style.display = 'block';
 
-    // Cerrar la modal
+    //para cerrar modal
     closeSpan.onclick = function() {
         modal.style.display = 'none';
-        document.body.removeChild(modal); // Eliminar la modal del DOM después de cerrarla
+        document.body.removeChild(modal); // eliminar modal
     }
 
     window.onclick = function(event) {
         if (event.target == modal) {
             modal.style.display = 'none';
-            document.body.removeChild(modal); // Eliminar la modal del DOM después de cerrarla
+            document.body.removeChild(modal); // eliminar del DOM
         }
     }
 }
