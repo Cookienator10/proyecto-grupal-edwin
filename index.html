@@ -1,23 +1,25 @@
-l<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="tienda.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <title>Módulo Productos</title>
 </head>
 <body>
-<header >
-    <div  class="cantainer-a">
-<a href="#"><i class="fa-solid fa-bars"style="color: rgb(244, 244, 243);"></i></a>
-    <input type="search">
-
-    <a href="#"><i class="fa-regular fa-user"style="color: rgb(244, 244, 243);"></i></a>
-    <a href="#"> <i class="fa-solid fa-cart-shopping"style="color: rgb(244, 244, 243);" ></i></a>
-</div>
+<header>
+    <div class="container-a">
+        <a href="#"><i class="fa-solid fa-bars" style="color: rgb(244, 244, 243);"></i></a>
+        <input type="search">
+        <a href="#"><i class="fa-regular fa-user" style="color: rgb(244, 244, 243);"></i></a>
+        <a href="#">
+            <i id="cartButton" class="fa-solid fa-cart-shopping" style="color: aliceblue;"></i>
+        </a>
+    </div>
 </header>
 
 <section>
@@ -26,26 +28,20 @@ l<!DOCTYPE html>
 
 <div class="container-b">
     <button type="button">Electronics</button>
-    <button type="button">Jewerely</button>
+    <button type="button">Jewelry</button>
     <button type="button">Mens</button>
-    <button type="button"> Women</button>
+    <button type="button">Women</button>
 </div>
 
-<section class="services" id="services">        
-
+<section class="services" id="services">
     <div class="container-products"></div>
-
-</section>  
+</section>
 
 <footer>
-    <div class="Container-c">
-        <a href="#"><i class="fa-brands fa-whatsapp"style="color: rgb(14, 14, 14);"></i> </a>
-        <a href="#"><i class="fa-brands fa-facebook"style="color: rgb(14, 14, 14);"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"style="color: rgb(14, 14, 14);"></i></a>
-
-    </div>
-
-   
+    <div class="container-c">
+        <a href="#"><i class="fa-brands fa-whatsapp" style="color: rgb(14, 14, 14);"></i> </a>
+        <a href="#"><i class="fa-brands fa-facebook" style="color: rgb(14, 14, 14);"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram" style="color: rgb(14, 14, 14);"></i></a>
     </div>
 </footer>
 </body>
